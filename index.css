@@ -1,0 +1,49 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  /* background-color: orange; */
+  background-color: transparent;
+}
+
+div {
+  padding: 0;
+  margin: 0;
+}
+
+.clock,
+.tomato {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.clock {
+  /* background-color: green; */
+  
+}
+
+.tomato {
+  /* background-color: red; */
+  pointer-events: none;
+  -webkit-app-region: drag;
+}
+
+h5 {
+  margin: 0;
+  font-size: 3.2rem;
+  font-weight: bold;
+  color: #000000;
+  pointer-events: none;
+  user-select: none;
+  transform: translateY(1.2rem);
+  -webkit-app-region: no-drag; 
+}

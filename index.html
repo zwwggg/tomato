@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"> -->
+  <link rel="stylesheet" href="index.css">
+
+  <title>Tomato Timer</title>
+</head>
+  <body>
+    <div class="tomato">
+      <svg width=150 height=150>
+        <use xlink:href="img/tomato.svg#tomato"></use>
+      </svg>
+    </div>
+    <div class="clock">
+      <h5 id="time" data-name="time">25:00</h5>
+    </div>
+    
+    <script>
+      window.$ = window.jQuery = require('./renderer-process/jquery.min.js')
+      // window.$ = window.jQuery = require('./node_modules/jquery/distjquery');
+      require('./renderer-process/timer.js')
+    </script>
+  </body>
+</html>
